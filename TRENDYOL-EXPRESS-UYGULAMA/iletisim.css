@@ -1,0 +1,85 @@
+.page-title {
+  margin: 40px 0;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.page-title h1 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 3.2rem;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+}
+
+.page-container .container-titles {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.page-container .container-titles h2,
+p {
+  margin: 10px 0;
+  font-weight: normal;
+  color: #666666;
+}
+
+.contact-form form {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.contact-form .form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .col-1,
+.col-2 {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.form-control label {
+  margin: 0.5rem 0;
+  color: #666666;
+}
+
+.form-control input,
+select,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #d3d3d3;
+}
+
+.form-control .btn {
+  margin-top: 22px;
+}
+.form-control input,
+.form-control textarea:focus {
+  outline: 0;
+}
+
+@media (max-width: 578px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+}

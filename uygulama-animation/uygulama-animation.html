@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+      }
+      #page-1 {
+        background-color: #e966a0;
+      }
+      #page-2 {
+        background-color: #2b2730;
+      }
+      #page-3 {
+        background-color: #6554af;
+      }
+      .page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+      }
+      .page h1 {
+        font-size: 5rem;
+        margin: 2rem;
+      }
+      .page p {
+        font-size: 1.2rem;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #fff;
+        color: #333;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        transition: all 0.3s ease-in;
+        border: none;
+      }
+
+      .btn:hover {
+        background-color: #333;
+        color: #fff;
+      }
+
+      #page-1 h1 {
+        transform: translateY(-800px);
+        animation: h1-a 1s forwards ease-in;
+      }
+      @keyframes h1-a {
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      #page-1 p {
+        transform: translatex(-2000px);
+        animation: p-a 1s forwards ease-in;
+      }
+      @keyframes p-a {
+        to {
+          transform: translateX(0);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="page-1" class="page">
+      <h1>Page-1</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, quod?
+        Dignissimos sunt natus similique laudantium. Dolores amet voluptatum
+        dicta reiciendis mollitia natus sint minima at quasi, voluptatem
+        molestiae distinctio enim?
+      </p>
+      <div>
+        <a href="#page-2" class="btn">Next Page</a>
+      </div>
+    </section>
+    <section id="page-2" class="page">
+      <h1>Page-2</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, quod?
+        Dignissimos sunt natus similique laudantium. Dolores amet voluptatum
+        dicta reiciendis mollitia natus sint minima at quasi, voluptatem
+        molestiae distinctio enim?
+      </p>
+      <div>
+        <a href="#page-1" class="btn">Previous Page</a>
+        <a href="#page-3" class="btn">Next Page</a>
+      </div>
+    </section>
+    <section id="page-3" class="page">
+      <h1>Page-3</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, quod?
+        Dignissimos sunt natus similique laudantium. Dolores amet voluptatum
+        dicta reiciendis mollitia natus sint minima at quasi, voluptatem
+        molestiae distinctio enim?
+      </p>
+      <div>
+        <a href="#page-2" class="btn">Previous Page</a>
+      </div>
+    </section>
+  </body>
+</html>

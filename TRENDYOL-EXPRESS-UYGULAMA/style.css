@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+/* utilis */
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+.line {
+  border: 1px solid #cfdbf1;
+  margin: 50px 0;
+}
+/* navbar */
+
+#navbar {
+  background-color: #001625;
+}
+
+.main-nav {
+  display: flex;
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+}
+
+.main-nav .logo {
+  width: 99px;
+  margin-right: 110px;
+}
+
+.main-nav .fa-bars {
+  display: none;
+  position: absolute;
+  top: 22px;
+  right: 0;
+  color: #f16623;
+  font-size: 30px;
+}
+
+.main-nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-nav ul li a {
+  color: #fff;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #f16623;
+}
+
+#header {
+  background-image: url(img/bg-1.png);
+  background-position: top;
+  background-size: cover;
+  height: 498px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header {
+  margin-right: 10%;
+}
+
+#header .header .header-item {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+#header .header-item {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-item .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-card input {
+  padding: 1rem 0.8rem;
+}
+
+.btn {
+  padding: 1rem 0.8rem;
+  border: none;
+  background-color: #f16623;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.search-card .search-card-title {
+  display: flex;
+  font-size: 2.6rem;
+  gap: 30px;
+}
+.card .form-card-title {
+  display: flex;
+}
+.form-card .form-card-title i {
+  font-size: 2.6rem;
+  margin-left: 30px;
+}
+.form-card .form-card-title p {
+  font-size: 2rem;
+}
+
+.main-section {
+  margin-top: 50px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.section .card p:first-child {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section .card img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.col-2 .card {
+  border: 2px solid #9ba4b5;
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 10px;
+}
+.col-2 .card i {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  color: #515763;
+}
+
+/* container */
+
+.container {
+  margin-bottom: 50px;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.content .right {
+  border: 1px solid #9ba4b5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+  line-height: 45px;
+}
+.content .right .title {
+  font-size: 2.6rem;
+  color: #f16623;
+}
+
+/* footer */
+
+footer {
+  background-color: #001625;
+}
+
+footer .footer-nav {
+  width: 80%;
+  margin: 10px auto;
+}
+
+footer .footer-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+footer .footer-nav li a {
+  color: #fff;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 1rem;
+  }
+  .header {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 633px) {
+  .main-section .section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  #navbar .main-nav ul {
+    display: none;
+  }
+  .main-nav .fa-bars {
+    display: block;
+  }
+
+  .header {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 1.4rem;
+  }
+  .main-nav {
+    width: 90%;
+  }
+  footer .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
